@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'segoe UI';
+    }
+
+    fieldset {
+        margin: 30px 0;
+    }
+    
+    #info {
+        position: fixed;
+        background: greenyellow;
+        color: white;
+        top: 0;
+        width: 100%;
+        display: block;
+        padding: 5px;
+        margin-bottom: 30px;
+    }
+
+    .titre {
+        font-weight: bold;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .zone1, .zone2, .zone3, .zone4, .zone5, .zone6, .zone7, .zone8, .zone9 {
+        background-color: lightblue;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    input, textarea, select {
+        width: 100%;
+        padding: 5px;
+    }
+    </style>
+
+    <title>Evenements-jQuery</title>
+
+</head>
+<body>
+
+    <div id="info"> Je ne fais rien... </div> <br> <br>
+
+    <fieldset>
+        <p class="titre"> 1. MOUSEOVER - SURVOLER LA ZONE 1</p>
+        <div class="zone1">zone1</div>
+    </fieldset>
+    
+    <fieldset>
+        <p class="titre">2. MOUSEOUT - QUITTER LA ZONE 2 APRES L'AVOIR SURVOLE</p>
+        <div class="zone2">zone2</div>
+    </fieldset>
+
+    <fieldset>
+        <p class="titre">3. MOUSEENTER + MOUSELEAVE - ENTRER ET SORTIR DE LA ZONE3</p>
+        <div class="zone3">zone3</div>
+    </fieldset>
+
+    <fieldset>
+        <p class="titre">4. CLICK - CLIQUER (UNE FOIS) SUR LA ZONE4</p>
+        <div class="zone4">zone4</div>
+    </fieldset>
+
+    <fieldset>
+        <p class="titre">5. DOUBLECLICK - DOUBLE CLIQUER SUR LA ZONE5</p>
+        <div class="zone5">zone5</div>
+    </fieldset>
+
+    <fieldset>
+        <p class="titre">6. CONTEXTMENU - CLIQUER DROIT SUR LA ZONE6</p>
+        <div class="zone6">zone6</div>
+    </fieldset>
+<form action="">
+    <fieldset>
+        <p class="titre">7. BLUR - CLIQUER AILLEURS APRES AVOIR CLIQUER SUR LA ZONE7</p>
+        <input type="text" placeholder="prenom-zone7" class="zone7">zone7</input>
+    </fieldset>
+    <fieldset>
+        <p class="titre">8. CHANGE - SELECTIONNER UNE AUTRE OPTION (ZONE8)</p>
+        <select name="" class="zone8">
+            <option disabled selected>Zone8 - Choisir une autre option</option>
+            <option>France</option>
+            <option>Italie</option>
+            <option>Espagne</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <p class="titre">9. KEYDOWN - APPUYER ET RELACHER UNE TOUCHE DE CLAVIER (ZONE9)</p>
+        <textarea class="zone9" placeholder="Commentaire"></textarea><br>
+    </fieldset>
+
+</form>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
